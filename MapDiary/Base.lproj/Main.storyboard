@@ -87,10 +87,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hsj-jW-3VG"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="H3j-73-9J8" id="nz1-HI-wix"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tYF-EL-Q4K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.95652173913049" y="117.85714285714285"/>
+            <point key="canvasLocation" x="664" y="896"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="527-qG-LPO">
@@ -130,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLQ-yF-RaI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="963.76811594202911" y="819.64285714285711"/>
+            <point key="canvasLocation" x="-351" y="896"/>
         </scene>
     </scenes>
 </document>

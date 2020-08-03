@@ -13,8 +13,6 @@ class ListViewController: UIViewController, IndicatorInfoProvider {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var exampleArray = ["1", "2", "3"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
