@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		95628EDD24D69D1F00C61852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95628EDB24D69D1F00C61852 /* Main.storyboard */; };
 		95628EDF24D69D2400C61852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95628EDE24D69D2400C61852 /* Assets.xcassets */; };
 		95628EE224D69D2400C61852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95628EE024D69D2400C61852 /* LaunchScreen.storyboard */; };
+		95628EEA24D6A03900C61852 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628EE924D6A03900C61852 /* MapViewController.swift */; };
+		95628EEC24D6A04F00C61852 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628EEB24D6A04F00C61852 /* ListViewController.swift */; };
+		95628EEE24D6A98F00C61852 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628EED24D6A98F00C61852 /* CustomTableViewCell.swift */; };
+		FF1573BF013C5616DAE486C3 /* Pods_MapDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B58B4D401BF0421EAA86F8 /* Pods_MapDiary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69546E40D7470B139B3DF885 /* Pods-MapDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDiary.release.xcconfig"; path = "Target Support Files/Pods-MapDiary/Pods-MapDiary.release.xcconfig"; sourceTree = "<group>"; };
+		87B58B4D401BF0421EAA86F8 /* Pods_MapDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95628ED224D69D1F00C61852 /* MapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95628ED524D69D1F00C61852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95628ED724D69D1F00C61852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		95628EDE24D69D2400C61852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95628EE124D69D2400C61852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95628EE324D69D2400C61852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95628EE924D6A03900C61852 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		95628EEB24D6A04F00C61852 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		95628EED24D6A98F00C61852 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		DB80C4CB6ABF1C3D0A5BFF6A /* Pods-MapDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDiary.debug.xcconfig"; path = "Target Support Files/Pods-MapDiary/Pods-MapDiary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1573BF013C5616DAE486C3 /* Pods_MapDiary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A152404FB55D0512233FE2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB80C4CB6ABF1C3D0A5BFF6A /* Pods-MapDiary.debug.xcconfig */,
+				69546E40D7470B139B3DF885 /* Pods-MapDiary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		95628EC924D69D1F00C61852 = {
 			isa = PBXGroup;
 			children = (
 				95628ED424D69D1F00C61852 /* MapDiary */,
 				95628ED324D69D1F00C61852 /* Products */,
+				0A152404FB55D0512233FE2F /* Pods */,
+				99EA0D540ECC817FE3866941 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,42 @@
 		95628ED424D69D1F00C61852 /* MapDiary */ = {
 			isa = PBXGroup;
 			children = (
+				95BAFC3524D7A08D00C4AC7E /* View */,
+				95BAFC3624D7A12400C4AC7E /* Controller */,
 				95628ED524D69D1F00C61852 /* AppDelegate.swift */,
 				95628ED724D69D1F00C61852 /* SceneDelegate.swift */,
-				95628ED924D69D1F00C61852 /* ViewController.swift */,
 				95628EDB24D69D1F00C61852 /* Main.storyboard */,
 				95628EDE24D69D2400C61852 /* Assets.xcassets */,
 				95628EE024D69D2400C61852 /* LaunchScreen.storyboard */,
 				95628EE324D69D2400C61852 /* Info.plist */,
 			);
 			path = MapDiary;
+			sourceTree = "<group>";
+		};
+		95BAFC3524D7A08D00C4AC7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95628EE924D6A03900C61852 /* MapViewController.swift */,
+				95628EEB24D6A04F00C61852 /* ListViewController.swift */,
+				95628EED24D6A98F00C61852 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95BAFC3624D7A12400C4AC7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95628ED924D69D1F00C61852 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99EA0D540ECC817FE3866941 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B58B4D401BF0421EAA86F8 /* Pods_MapDiary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95628EE624D69D2400C61852 /* Build configuration list for PBXNativeTarget "MapDiary" */;
 			buildPhases = (
+				ACF7D823D7E20C69B21EA774 /* [CP] Check Pods Manifest.lock */,
 				95628ECE24D69D1F00C61852 /* Sources */,
 				95628ECF24D69D1F00C61852 /* Frameworks */,
 				95628ED024D69D1F00C61852 /* Resources */,
+				CB57C699A3B250AF51281D4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +184,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ACF7D823D7E20C69B21EA774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapDiary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB57C699A3B250AF51281D4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapDiary/Pods-MapDiary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapDiary/Pods-MapDiary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapDiary/Pods-MapDiary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95628ECE24D69D1F00C61852 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95628EEE24D6A98F00C61852 /* CustomTableViewCell.swift in Sources */,
 				95628EDA24D69D1F00C61852 /* ViewController.swift in Sources */,
 				95628ED624D69D1F00C61852 /* AppDelegate.swift in Sources */,
 				95628ED824D69D1F00C61852 /* SceneDelegate.swift in Sources */,
+				95628EEC24D6A04F00C61852 /* ListViewController.swift in Sources */,
+				95628EEA24D6A03900C61852 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +378,7 @@
 		};
 		95628EE724D69D2400C61852 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB80C4CB6ABF1C3D0A5BFF6A /* Pods-MapDiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +397,7 @@
 		};
 		95628EE824D69D2400C61852 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69546E40D7470B139B3DF885 /* Pods-MapDiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
