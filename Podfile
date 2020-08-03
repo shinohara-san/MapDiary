@@ -7,5 +7,6 @@ target 'MapDiary' do
 
   # Pods for MapDiary
 pod 'XLPagerTabStrip'
+pod 'RealmSwift'
 # pod "VerticalAlignmentLabel"
 end

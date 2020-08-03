@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Place {
-    var name: String
-    var lat: Double
-    var lon: Double
-    var diary: String
-    var date: Date
+class Place: Object {
+    @objc dynamic var id = ""
+    @objc dynamic var name = ""
+    @objc dynamic var lat = 0
+    @objc dynamic var lon = 0
+    @objc dynamic var diary = ""
+    @objc dynamic var date = ""
+    
+    override static func primaryKey() -> String? {
+      return "id"
+    }
 }

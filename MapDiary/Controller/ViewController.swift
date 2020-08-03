@@ -37,7 +37,7 @@ class ViewController: ButtonBarPagerTabStripViewController {
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
     let child_1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "list")
     let child_2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "map")
-    return [child_1, child_2]
+    return [child_2, child_1]
     }
     
     

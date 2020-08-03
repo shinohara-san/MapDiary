@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		954DCEA224D7A57C00BE2986 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DCEA124D7A57C00BE2986 /* Place.swift */; };
+		954DCEA424D7A85E00BE2986 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DCEA324D7A85E00BE2986 /* DataSource.swift */; };
+		954DCEA624D7AA6600BE2986 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DCEA524D7AA6600BE2986 /* InputViewController.swift */; };
+		954DCEA824D7AA9D00BE2986 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954DCEA724D7AA9D00BE2986 /* DetailViewController.swift */; };
 		95628ED624D69D1F00C61852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628ED524D69D1F00C61852 /* AppDelegate.swift */; };
 		95628ED824D69D1F00C61852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628ED724D69D1F00C61852 /* SceneDelegate.swift */; };
 		95628EDA24D69D1F00C61852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95628ED924D69D1F00C61852 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		69546E40D7470B139B3DF885 /* Pods-MapDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapDiary.release.xcconfig"; path = "Target Support Files/Pods-MapDiary/Pods-MapDiary.release.xcconfig"; sourceTree = "<group>"; };
 		87B58B4D401BF0421EAA86F8 /* Pods_MapDiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapDiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		954DCEA124D7A57C00BE2986 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		954DCEA324D7A85E00BE2986 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		954DCEA524D7AA6600BE2986 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		954DCEA724D7AA9D00BE2986 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		95628ED224D69D1F00C61852 /* MapDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95628ED524D69D1F00C61852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95628ED724D69D1F00C61852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				954DCEA124D7A57C00BE2986 /* Place.swift */,
+				954DCEA324D7A85E00BE2986 /* DataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +114,8 @@
 				95628EE924D6A03900C61852 /* MapViewController.swift */,
 				95628EEB24D6A04F00C61852 /* ListViewController.swift */,
 				95628EED24D6A98F00C61852 /* CustomTableViewCell.swift */,
+				954DCEA524D7AA6600BE2986 /* InputViewController.swift */,
+				954DCEA724D7AA9D00BE2986 /* DetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -242,12 +251,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				954DCEA624D7AA6600BE2986 /* InputViewController.swift in Sources */,
 				95628EEE24D6A98F00C61852 /* CustomTableViewCell.swift in Sources */,
 				95628EDA24D69D1F00C61852 /* ViewController.swift in Sources */,
 				95628ED624D69D1F00C61852 /* AppDelegate.swift in Sources */,
 				95628ED824D69D1F00C61852 /* SceneDelegate.swift in Sources */,
 				95628EEC24D6A04F00C61852 /* ListViewController.swift in Sources */,
 				954DCEA224D7A57C00BE2986 /* Place.swift in Sources */,
+				954DCEA824D7AA9D00BE2986 /* DetailViewController.swift in Sources */,
+				954DCEA424D7A85E00BE2986 /* DataSource.swift in Sources */,
 				95628EEA24D6A03900C61852 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
